@@ -1,0 +1,20 @@
+<!-- health/templates/health/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagnosis Result</title>
+</head>
+<body>
+    <h2>Diagnosis Result</h2>
+    <p><strong>Disease:</strong> {{ result.disease }}</p>
+    <p><strong>Severity:</strong> {{ result.severity }}</p>
+    <p><strong>Precautions:</strong></p>
+    <ul>
+        {% for p in result.precautions %}
+            <li>{{ p }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'diagnose' %}">Check Another Symptom</a>
+</body>
+</html>
