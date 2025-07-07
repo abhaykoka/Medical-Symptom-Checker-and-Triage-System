@@ -1,0 +1,14 @@
+# Django web framework
+Django==3.2.22
+
+# For ML model loading and prediction
+joblib==1.4.0
+scikit-learn==1.4.1.post1
+numpy==1.26.4
+pandas==2.2.2
+
+# If using TF-IDF
+scipy==1.13.1
+
+# Optional: for WSGI server in production
+gunicorn==21.2.0
